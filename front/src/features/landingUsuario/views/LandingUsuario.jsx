@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Row, Col, Container, Button, Table } from "reactstrap";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
-import EditarGastoGanho from "./EditarGastoGanho";
 // core components
 import LandingUsuarioNavbar from "components/Navbars/LandingUsuarioNavbar.js";
 import Footer from "components/Footer/Footer.js";
@@ -95,12 +94,6 @@ const LandingUsuario = (props) => {
                   ))}
               </tbody>
             </Table>
-            <EditarGastoGanho
-              modalAberto={modalEditar}
-              setModalAberto={setModalEditar}
-              dadosTransacao={dadosEditar}
-              setDadosTransacao={setDadosEditar}
-            />
           </Container>
         </div>
         <section className="section section-lg">

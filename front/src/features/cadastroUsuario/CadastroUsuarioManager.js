@@ -2,7 +2,7 @@ import UsuarioService from "../../services/UsuarioService";
 
 class CadastroUsuarioManager{
     async cadastrarUsuario(usuario){
-        return await InstituicaoService.CadastrarInstituicao(usuario).then(
+        return await UsuarioService.CadastrarUsuario(usuario).then(
             resposta => resposta && resposta.data
         )
     }
